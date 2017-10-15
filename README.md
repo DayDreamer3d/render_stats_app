@@ -85,7 +85,7 @@ Please look up `--help` for details.
 ### Technical Documentation
 
 #### Data Processing (Side View)
-![data processing](../docs/dataflow.png)
+![data processing](./docs/dataflow.png)
 
 `Staging` architecture with `data stream` appeared to be the suitable solution for this problem. It consists of three stages `Retrieval`, `Filtering` and `Aggregation` stage with data streaming through these stages to produce the final result.
 
@@ -136,7 +136,7 @@ Apart from primary infrastructure defined above, we need additional supportive i
 
 #### Directory Structure
 
-![directory structure](../docs/directorystructure.png)
+![directory structure](./docs/directorystructure.png)
 
 * `root level` - At root level we have more public facing files like `run.sh` and `main.py`.
 * `_impl` - contains all the implementation for the app. It's protected to keep out from external influence.
