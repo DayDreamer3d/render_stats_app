@@ -85,7 +85,7 @@ Please look up `--help` for details.
 ### Technical Documentation
 
 #### Data Processing (Side View)
-![data processing](../docs/data flow.png)
+![data processing](../docs/dataflow.png)
 
 `Staging` architecture with `data stream` appeared to be the suitable solution for this problem. It consists of three stages `Retrieval`, `Filtering` and `Aggregation` stage with data streaming through these stages to produce the final result.
 
