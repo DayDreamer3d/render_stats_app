@@ -1,0 +1,1 @@
+ubmitted tarball must have a GNU Make file in its root. This file can be as simple or complex as your solution requires, but must have a default target that can be used to build your program. We will enter the root of your solution and run the command  make  to build your program.
