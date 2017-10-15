@@ -85,7 +85,7 @@ Please look up `--help` for details.
 ### Technical Documentation
 
 #### Data Processing (Side View)
-![data processing](../docs/data_flow.png)
+![data processing](../docs/data flow.png)
 
 `Staging` architecture with `data stream` appeared to be the suitable solution for this problem. It consists of three stages `Retrieval`, `Filtering` and `Aggregation` stage with data streaming through these stages to produce the final result.
 
@@ -136,7 +136,7 @@ Apart from primary infrastructure defined above, we need additional supportive i
 
 #### Directory Structure
 
-![directory structure](../docs/directory_structure.png)
+![directory structure](../docs/directorystructure.png)
 
 * `root level` - At root level we have more public facing files like `run.sh` and `main.py`.
 * `_impl` - contains all the implementation for the app. It's protected to keep out from external influence.
@@ -150,9 +150,6 @@ Apart from primary infrastructure defined above, we need additional supportive i
 #### Intentional Choices
 I consider this as a conceptual app through which I can present the design and principles for such apps. To do it clearly I've strip down the actual implementation of the components (for instance, caching is a) and not using any third party technologies.
 
-#### Missing
-`Tests` - I apologise for not writing any tests. Other development took quite some time.
-
 #### Bugs
 
 If you see inaccurate results please dial down the `aggregator_threads` value to `1` in the `./config/__init__.py` under `Concurrency` class.
@@ -162,5 +159,3 @@ I hope you won't hit this hurdle :) .
 * I realised (late) that this is more `cpu` intensive task than `i/o` bound and should  have used `multiprocessing` instead of `multithreading` for concurrency.
 * Speaking of concurrency, would be interesting to play with `async` stuff and compare the performance.
 * May be we can run above stages as services.
-
-    I think I'm getting ahead of myself so I'll stop now.
